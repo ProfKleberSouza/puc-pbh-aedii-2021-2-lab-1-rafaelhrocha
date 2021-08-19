@@ -3,16 +3,22 @@
 
 int main() {
 
-    int a, b, s;
+    int a, r;
   
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%d", &a);
 
+  b = [a];
+
+  for( int i = 0; i < a; i++){
+    scanf("%d", &b[i])
+  }
+  
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  r = somar(a, b);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("MENOR = %d\n", r);
 
   return(0);
 }
