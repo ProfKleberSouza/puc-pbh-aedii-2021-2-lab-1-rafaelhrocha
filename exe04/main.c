@@ -6,7 +6,8 @@ int main() {
     int a, b, s;
   
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  fflush(stdin);
+	
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
   s = somar(a, b);
