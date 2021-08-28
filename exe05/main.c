@@ -2,17 +2,13 @@
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
+    char palavra[50];
+    
+    // ENTRADA DE DADOS
+    fgets(palavra,50,stdin);
+    fflush(stdin);
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+    // PROCESSAMENTO - EXECUTANDO A FUNCAO
+    inverte(palavra);
+    return(0);
 }
