@@ -1,19 +1,16 @@
 #include <stdio.h>
 #include "functions.h"
+#include <string.h>
+#include <ctype.h>
 
 int main() {
-
-  char palavra[20];
+    char palavra[20];
+    
+    // ENTRADA DE DADOS
+    fgets(palavra,50,stdin);
+    fflush(stdin);
   
-  // ENTRADA DE DADOS
-  scanf("%c", &palavra)
-	
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  vogais = numero_vogais(palavra);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+    // PROCESSAMENTO - EXECUTANDO A FUNCAO
+    numero_vogais(palavra);
+    return(0);
 }
