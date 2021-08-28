@@ -1,0 +1,5 @@
+1c1
+< SIM
+\ No newline at end of file
+---
+> test.sh: line 15: ./main: No such file or directory

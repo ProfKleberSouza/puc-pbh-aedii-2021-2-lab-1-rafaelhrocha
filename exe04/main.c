@@ -3,14 +3,14 @@
 
 int main() {
 
-    int a, b, s;
+  char palavra[20];
   
   // ENTRADA DE DADOS
-  fflush(stdin);
+  scanf("%c", &palavra)
 	
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  vogais = numero_vogais(palavra);
 
   // SAIDA - IMPRIMINDO O RESULTADO
   printf("SOMA = %d\n", s);

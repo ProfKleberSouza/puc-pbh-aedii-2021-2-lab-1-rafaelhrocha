@@ -3,16 +3,22 @@
 
 int main() {
 
-    int a, b, s;
+  char palavra[50];
+	bool palindromo;
   
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%s", &palavra);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  palindromo = is_palindromo(palavra);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+	if (palindromo == true) {
+		printf("SIM", palindromo);
+	}
+  else{
+		printf("NAO", palindromo);
+	}
 
   return(0);
 }
